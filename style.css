@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "ROKAFSans";
+  src: url("../font/ROKAF Sans Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -37,10 +44,12 @@ body {
 
 .logo-text {
   color: #3692ff;
+  font-family: "ROKAFSans";
   font-size: 25.633px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-decoration: none;
   flex-shrink: 0; /*텍스트가 반응해서 줄어들길래 추가함*/
 }
 
