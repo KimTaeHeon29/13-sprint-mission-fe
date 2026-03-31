@@ -268,5 +268,5 @@
   text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
-  text-underline-position:;
+  text-underline-position: from-font;
 }
