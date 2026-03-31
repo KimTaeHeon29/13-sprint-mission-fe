@@ -33,16 +33,24 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
 .login-container {
   width: 1920px;
+  height: 1080px;
   padding: 231px 640px 284px 640px;
   display: flex;
-  width: 640px;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   flex-shrink: 0;
-  background-color: #fcfcfc;
 }
 
 .logo-box {
@@ -51,9 +59,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
 }
 
 .logo-text {
@@ -71,6 +76,7 @@
 
 .login-frame {
   display: flex;
+  width: 640px;
   flex-direction: column;
   align-items: center;
   gap: 24px;
@@ -82,7 +88,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  width: 100%;
 }
 
 .email-label {
@@ -96,8 +101,8 @@
 
 .email-input {
   display: flex;
-  width: 592px;
-  height: 24px;
+  width: 640px;
+  height: 56px;
   padding: 16px 24px;
   align-items: center;
   gap: 10px;
@@ -153,8 +158,8 @@
 
 .pwd-input {
   display: flex;
-  width: 592px;
-  height: 24px;
+  width: 640px;
+  height: 56px;
   padding: 16px 24px;
   align-items: center;
   gap: 10px;
@@ -225,8 +230,8 @@
 
 .sns-login {
   display: flex;
-  width: 594px;
-  height: 42px;
+  width: 640px;
+  height: 74px;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
@@ -269,4 +274,67 @@
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+
+.signup-container {
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+  padding: 60px 640px 178px 640px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.nickname-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.nickname-label {
+  color: #1f2937;
+  font-family: "Pretendard-Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.nickname-input {
+  display: flex;
+  width: 640px;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #f3f4f6;
+  color: black;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nickname-input::placeholder {
+  color: #9ca3af;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nickname-input:focus {
+  outline: none;
+  border: 1.5px solid #3692ff;
 }
