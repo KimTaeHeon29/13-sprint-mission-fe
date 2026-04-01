@@ -45,7 +45,7 @@ body {
 .login-container {
   width: 1920px;
   height: 1080px;
-  padding: 231px 640px 284px 640px;
+  padding: 230px 640px 284px 640px;
   display: flex;
   flex-direction: column;
   align-items: center;
