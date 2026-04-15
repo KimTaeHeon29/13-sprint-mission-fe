@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="logo-box">
+        <a href="../">
+          <img class="logo" src="../img/logo.svg" alt="판다마켓" />
+        </a>
+        <a class="logo-text" href="../"> 판다마켓 </a>
+      </div>
+      <div class="login-frame">
+        <div class="email-box">
+          <label class="email-label">이메일</label>
+          <input
+            class="email-input"
+            type="email"
+            placeholder="이메일을 입력해주세요"
+          />
+        </div>
+        <div class="pwd-box">
+          <label class="pwd-label">비밀번호</label>
+          <div class="pwd-input-wrapper">
+            <input
+              class="pwd-input"
+              type="password"
+              placeholder="비밀번호를 입력해주세요"
+            />
+            <button type="button" class="toggle-pwd">
+              <img src="../img/eye-off.png" alt="비밀번호 표시" />
+            </button>
+          </div>
+        </div>
+        <button class="login-btn" type="button">로그인</button>
+        <div class="sns-login">
+          <div class="sns-login-text">간편 로그인하기</div>
+          <div class="sns-login-btns">
+            <a href="https://www.google.com" rel="noopener noreferrer">
+              <img src="../img/google.png" alt="google login" />
+            </a>
+            <a href="https://www.kakaocorp.com/page/" rel="noopener noreferrer">
+              <img src="../img/kakao.png" alt="kakao login" />
+            </a>
+          </div>
+        </div>
+        <div class="signup-label">
+          <span>판다마켓이 처음이신가요?</span>
+          <a class="signup-link" href="../signup">회원가입</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

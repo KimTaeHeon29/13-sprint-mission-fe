@@ -1,0 +1,340 @@
+@font-face {
+  font-family: "ROKAFSans";
+  src: url("../font/ROKAF Sans Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("../font/Pretendard-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("../font/Pretendard-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("../font/Pretendard-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("../font/Pretendard-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+.login-container {
+  width: 1920px;
+  height: 1080px;
+  padding: 230px 640px 284px 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.logo-box {
+  width: 396px;
+  height: 132px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  width: 266px;
+  height: 90px;
+  color: #3692ff;
+  font-family: "ROKAFSans";
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.login-frame {
+  display: flex;
+  width: 640px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.email-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.email-label {
+  color: #1f2937;
+  font-family: "Pretendard-Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.email-input {
+  display: flex;
+  width: 640px;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #f3f4f6;
+  color: black;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.email-input::placeholder {
+  color: #9ca3af;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.email-input:focus {
+  outline: none;
+  border: 1.5px solid #3692ff;
+}
+
+.pwd-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.pwd-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.pwd-label {
+  color: #1f2937;
+  font-family: "Pretendard-Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.pwd-input {
+  display: flex;
+  width: 640px;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #f3f4f6;
+  color: black;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.pwd-input::placeholder {
+  color: #9ca3af;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.pwd-input:focus {
+  outline: none;
+  border: 1.5px solid #3692ff;
+}
+
+.pwd-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle-pwd {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.login-btn {
+  display: flex;
+  width: 640px;
+  height: 56px;
+  padding: 16px 124px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  border: none;
+  background: #9ca3af;
+  color: #f3f4f6;
+  text-align: center;
+  font-family: "Pretendard-SemiBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  cursor: not-allowed;
+}
+
+.sns-login {
+  display: flex;
+  width: 640px;
+  height: 74px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #e6f2ff;
+  padding: 16px 23px;
+  gap: 10px;
+  color: #1f2937;
+  font-family: "Pretendard-Medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.sns-login-btns {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.signup-label {
+  color: #1f2937;
+  font-family: "Pretendard-medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.signup-link {
+  color: #3692ff;
+  font-family: "Pretendard-medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.signup-container {
+  display: flex;
+  width: 1920px;
+  height: 1080px;
+  padding: 60px 640px 178px 640px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.nickname-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.nickname-label {
+  color: #1f2937;
+  font-family: "Pretendard-Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.nickname-input {
+  display: flex;
+  width: 640px;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #f3f4f6;
+  color: black;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nickname-input::placeholder {
+  color: #9ca3af;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.nickname-input:focus {
+  outline: none;
+  border: 1.5px solid #3692ff;
+}
