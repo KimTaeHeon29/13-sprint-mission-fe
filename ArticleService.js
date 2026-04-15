@@ -29,7 +29,7 @@ export async function getArticle(articleId) {
   }
 }
 
-export async function createArticle(articleData) {
+export async function createArticle({ title, content, image }) {
   const url = `${API_URL}/articles`;
 
   try {
@@ -38,15 +38,58 @@ export async function createArticle(articleData) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(articleData),
+      body: JSON.stringify({
+        title: title,
+        content: content,
+        image: image,
+      }),
     });
 
     if (!response.ok) {
-      throw new Error("게시글 생성에 실패했습니다.");
+      throw new Error(`게시글 등록 실패 (상태코드: ${response.status})`);
     }
 
     return await response.json();
   } catch (error) {
-    console.error("createArticle 에러:", error);
+    console.error("createArticle 함수 오류:", error);
+  }
+}
+
+export async function patchArticle(id, updateData) {
+  const url = `${API_URL}/articles/${id}`;
+
+  try {
+    const response = await fetch(url, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateData),
+    });
+
+    if (!response.ok) {
+      throw new Error(`게시글(ID: ${id}) 수정 실패`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("patchArticle 함수 오류:", error);
+  }
+}
+
+export async function deleteArticle(id) {
+  const url = `${API_URL}/articles/${id}`;
+
+  try {
+    const response = await fetch(url, {
+      method: "DELETE",
+    });
+
+    if (!response.ok) {
+      throw new Error(`게시글(ID: ${id}) 삭제에 실패했습니다.`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error("deleteArticle 함수 오류:", error);
   }
 }
