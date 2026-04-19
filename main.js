@@ -4,7 +4,7 @@ import * as ProductAPI from "./ProductService.js";
 
 // Article API 테스트 함수
 async function testArticleFlow() {
-  console.log("📝 게시글(Article) API 테스트 시작");
+  console.log("Article API 테스트 시작");
 
   try {
     const newArticleData = {
@@ -49,7 +49,7 @@ testArticleFlow();
 
 // Product API 테스트 함수
 async function testProductFlow() {
-  console.log("🚀 상품 API 테스트 시작");
+  console.log("Product API 테스트 시작");
 
   try {
     const newProductData = {
