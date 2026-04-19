@@ -8,8 +8,8 @@ async function testArticleFlow() {
 
   try {
     const newArticleData = {
-      title: "공부 기록용 게시글",
-      content: "오늘 API 호출 함수를 직접 구현해보았습니다.",
+      title: "test",
+      content: "api test",
       image: "https://picsum.photos/600/400",
     };
 
@@ -27,14 +27,14 @@ async function testArticleFlow() {
     );
 
     const updateData = {
-      title: "수정된 게시글 제목입니다",
-      content: "성공적으로 수정을 완료했습니다.",
+      title: "patchTest",
+      content: "patchTest",
     };
     const updatedArticle = await ArticleAPI.patchArticle(
       createdArticle.id,
       updateData,
     );
-    console.log("4. 게시글 수정 성공 (변경된 제목):", updatedArticle.title);
+    console.log("4. 게시글 수정 성공:", updatedArticle.title);
 
     const deletedArticle = await ArticleAPI.deleteArticle(createdArticle.id);
     console.log("5. 게시글 삭제 성공:", deletedArticle);
@@ -53,8 +53,8 @@ async function testProductFlow() {
 
   try {
     const newProductData = {
-      name: "테스트 상품",
-      description: "테스트 용도로 생성된 상품 설명입니다.",
+      name: "test",
+      description: "api test.",
       price: 15000,
       tags: ["테스트", "신상품"],
       images: ["https://picsum.photos/600/400"],
